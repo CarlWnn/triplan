@@ -4,11 +4,15 @@
   "scripts": {
     "client": "cd client && npm start",
     "server": "cd api && npm start",
-    "start": "concurrently -p \"[{name}]\" -n \"client,server\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm run -s client\" \"npm run -s server\" "
+    "start": "concurrently -p \"[{name}]\" -n \"client,server\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm run -s client\" \"npm run -s server\" ",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
-    "concurrently": "^4.0.1",
-    "nodemailer": "^4.6.8",
-    "react-places-autocomplete": "^7.2.0"
-  }
+    "concurrently": "^5.0.1",
+    "nodemailer": "^6.6.1",
+    "react-places-autocomplete": "^7.2.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
