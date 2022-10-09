@@ -1,0 +1,15 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - '@okta/okta-sdk-nodejs > lodash':
+        patched: '2022-10-09T20:13:09.320Z'
+    - mongoose > async > lodash:
+        patched: '2022-10-09T20:13:09.320Z'
+    - request-promise > request-promise-core > lodash:
+        patched: '2022-10-09T20:13:09.320Z'
+  'npm:uglify-js:20151024':
+    - jade > transformers > uglify-js:
+        patched: '2022-10-09T20:13:09.320Z'
