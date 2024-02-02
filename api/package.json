@@ -21,8 +21,8 @@
     "nodemailer": "^4.6.8",
     "path": "^0.12.7",
     "react-router-dom": "^4.3.1",
-    "request": "^2.87.0",
-    "request-promise": "^4.2.2",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
     "xoauth2": "^1.2.0"
   }
 }
